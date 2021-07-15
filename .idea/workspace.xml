@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aa41982-09a4-4d63-a772-6134674b25c0" name="Default Changelist" comment="" />
+    <list default="true" id="2aa41982-09a4-4d63-a772-6134674b25c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/order/download_invoice.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/order/manage.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/order/view_order.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/order/view_order_invoice.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/checkOut/order_completed.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/checkOut/stripe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/foodtrucklah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/foodtrucklah.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CheckOutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/backendSourceFile/dist/img/user8-128x128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/category/manageCategory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category/manageCategory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/include/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/include/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/include/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/include/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/include/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/include/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/checkOut/checkOutField.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/checkOut/shipping.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/checkOut/shipping.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/customer/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/customer/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/include/banner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/include/banner.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/include/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/include/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/include/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/include/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +40,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -121,6 +154,13 @@
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/bumbummen99/shoppingcart" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
     </include_path>
   </component>
   <component name="ProjectId" id="1s0jmUHnK9zvHXk6EDGbBaUXcLG" />
@@ -162,7 +202,17 @@
       <workItem from="1620752502508" duration="129000" />
       <workItem from="1620784617009" duration="310000" />
       <workItem from="1621147440902" duration="598000" />
-      <workItem from="1621220954327" duration="24024000" />
+      <workItem from="1621220954327" duration="30141000" />
+      <workItem from="1621304986314" duration="15211000" />
+      <workItem from="1621399431220" duration="20244000" />
+      <workItem from="1621475353863" duration="3206000" />
+      <workItem from="1622000787975" duration="944000" />
+      <workItem from="1622110385952" duration="3232000" />
+      <workItem from="1622168652798" duration="527000" />
+      <workItem from="1622525987671" duration="489000" />
+      <workItem from="1622609232828" duration="103000" />
+      <workItem from="1622610168478" duration="619000" />
+      <workItem from="1622790555645" duration="205000" />
     </task>
     <servers />
   </component>
@@ -173,6 +223,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="434" y="244" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621407703815">
+      <screen x="0" y="23" width="1440" height="824" />
+    </state>
+    <state x="434" y="244" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.824@0.23.1440.824" timestamp="1621407703815" />
     <state x="458" y="197" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1620644042194">
       <screen x="0" y="23" width="1440" height="824" />
     </state>

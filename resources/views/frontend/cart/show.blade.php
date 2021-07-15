@@ -77,6 +77,11 @@
                                 <td></td>
                                 <td></td>
                                 <td class="text-center"><b> RM {{ $sum }}</b></td>
+
+                                <?php
+                                    Session::put('sum', $sum);
+                                ?>
+
                             </tr>
                             </tbody>
                         </table>
@@ -85,95 +90,106 @@
 
             </div>
 
-{{--            <div class="col-md-9 product-w3ls-right">--}}
+            @if(Session::get('customer_id', 'shipping_id'))
 
-{{--                <a href="{{ route('check_out') }}" class="btn btn-info" style="float: right">--}}
-{{--                    <i class="fa fa-shopping-bag nav-icon"></i>--}}
-{{--                    Checkout--}}
-{{--                </a>--}}
+                <div class="col-md-9 product-w3ls-right">
 
-{{--            </div>--}}
+                    <a href="{{ url('/checkout/payment') }}" class="btn btn-info" style="float: right">
+                        <i class="fa fa-shopping-bag"></i>
+                        Checkout
+                    </a>
+                </div>
+            @elseif(Session::get('customer_id'))
+                <div class="col-md-9 product-w3ls-right">
 
-            <div class="col-md-9 product-w3ls-right">
+                    <a href="{{ url('/shipping') }}" class="btn btn-info" style="float: right">
+                        <i class="fa fa-shopping-bag"></i>
+                        Checkout
+                    </a>
+                </div>
 
-                <a href="" data-toggle="modal" data-target="#login_or_register" class="btn btn-info" style="float: right">
-                    <i class="fa fa-shopping-bag nav-icon"></i>
-                    Checkout
-                </a>
+            @else
+                <div class="col-md-9 product-w3ls-right">
+
+                    <a href="" data-toggle="modal" data-target="#login_or_register" class="btn btn-info" style="float: right">
+                        <i class="fa fa-shopping-bag"></i>
+                        Checkout
+                    </a>
+
+                </div>
+            @endif
 
             </div>
-
         </div>
-    </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="login_or_register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">x</span>
-                    </button>
-                </div>
-                <div class="modal-body">
+        <!-- Modal -->
+        <div class="modal fade" id="login_or_register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">x</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
 
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3>
-                                    Welcome to Foodtrucklah!
-                                </h3>
-                                <div class="text-center" style="
-                                                                margin-top: 25px;
-                                                                height: 160px;
-                                                                width: 160px;
-                                                                border-radius: 50%;
-                                                                background-color: darkblue;
-                                                                color: ghostwhite;
-                                                                padding-top: 65px;
-                                                                font-size: 20px">
-                                    A Hub for food
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>
+                                        Welcome to Foodtrucklah!
+                                    </h3>
+                                    <div class="text-center" style="
+                                                                    margin-top: 25px;
+                                                                    height: 160px;
+                                                                    width: 160px;
+                                                                    border-radius: 50%;
+                                                                    background-color: darkblue;
+                                                                    color: ghostwhite;
+                                                                    padding-top: 65px;
+                                                                    font-size: 20px">
+                                        A Hub for food
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4>Are you a new?</h4>
-                                <a href="{{ route('sign_up') }}" class="btn-block btn-primary text-center"
-                                   style="
-                                            height: 60px;
-                                            width: auto;
-                                            padding-top: 12px;
-                                            margin-top: 25px;
-                                            font-size: 25px
-                                            ">
-                                    <span class="mt-5">Register</span>
-                                </a>
-                                <h3 class="mt-lg-5 text-center">Or</h3>
-                                <h4 class="mt-5">Already have an account?</h4>
-                                <a href="" class="btn-block btn-success text-center"
-                                   style="
-                                            height: 60px;
-                                            width: auto;
-                                            padding-top: 12px;
-                                            margin-top: 10px;
-                                            font-size: 25px
-                                            ">
-                                    <span class="mt-5">Login</span>
-                                </a>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Are you a new?</h4>
+                                    <a href="{{ route('sign_up') }}" class="btn-block btn-primary text-center"
+                                       style="
+                                                height: 60px;
+                                                width: auto;
+                                                padding-top: 12px;
+                                                margin-top: 25px;
+                                                font-size: 25px
+                                                ">
+                                        <span class="mt-5">Register</span>
+                                    </a>
+                                    <h3 class="mt-lg-5 text-center">Or</h3>
+                                    <h4 class="mt-5">Already have an account?</h4>
+                                    <a href="{{ route('log_in') }}" class="btn-block btn-success text-center"
+                                       style="
+                                                height: 60px;
+                                                width: auto;
+                                                padding-top: 12px;
+                                                margin-top: 10px;
+                                                font-size: 25px
+                                                ">
+                                        <span class="mt-5">Login</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
+                    <div class="modal-footer">
 
-                </div>
-                <div class="modal-footer">
-
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-@endsection
+    @endsection

@@ -25,7 +25,7 @@
                 <tr>
                     <th>SL</th>
                     <th>Category Name</th>
-                    <th>Order Number</th>
+                    {{--<th>Order Number</th>--}}
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -35,7 +35,7 @@
                 <tr>
                     <td>{{ $i++ }}</td>
                     <td>{{ $cate->category_name }}</td>
-                    <td>{{ $cate->order_number }}</td>
+                    {{--<td>{{ $cate->order_number }}</td>--}}
                     <td>
 
                     @if($cate->category_status == 1)

@@ -28,7 +28,7 @@
                     <div class="wthreelogin-text">
                         <div class="clearfix"> </div>
                     </div>
-                    <input type="submit" value="Sign Up">
+                    <input type="submit" value="Proceed">
                 </form>
             </div>
         </div>
